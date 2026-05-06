@@ -48,7 +48,11 @@ python calculator.py
 
 ## 📸 Preview
 
-(Add screenshots here)
+<img width="1919" height="1012" alt="Image" src="https://github.com/user-attachments/assets/a97dfee0-aa6e-4094-a03c-26a2dc734fc3" />
+
+<img width="1919" height="1000" alt="Image" src="https://github.com/user-attachments/assets/b69d368f-a4d4-4a11-88ba-a3dbd911c0f8" />
+
+<img width="1919" height="1010" alt="Image" src="https://github.com/user-attachments/assets/a03a17da-dc6a-454e-b7d3-0870d875c0bb" />
 
 ---
 
