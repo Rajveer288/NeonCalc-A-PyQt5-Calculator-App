@@ -7,7 +7,6 @@ class CalculatorWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('Calculator')
-        self.setWindowIcon(QIcon(r'20260216_OHR.JorvikVikingFestival2026_EN-GB0705464256_UHD_bing.jpg'))
         self.button_1 = QPushButton('1',self)
         self.button_2 = QPushButton('2',self)
         self.button_3 = QPushButton('3',self)
@@ -58,6 +57,8 @@ class CalculatorWindow(QWidget):
         vbox.addLayout(grid)
         self.setLayout(vbox)
 
+        self.linedit.setAlignment(Qt.AlignRight)
+
         self.setStyleSheet('''
         QWidget{
         background-color: rgb(34, 192, 245);
@@ -94,6 +95,10 @@ class CalculatorWindow(QWidget):
 
     def button_clicked(self):
         signal=self.sender()
+        if signal is None:
+            self.linedit.setText("No Signal")
+            return
+        
         read=signal.text()
         current=self.linedit.text()
         operators='+-*/'
